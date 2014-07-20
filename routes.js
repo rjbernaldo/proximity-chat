@@ -10,20 +10,12 @@ module.exports = function(app, io) {
 	});
 
 	var chat = io.of('/socket').on('connection', function(socket) {
-		socket.on('load',function(data){
-			
-		});
+		socket.on('load',function(data){});
 
-		socket.on('login', function(data) {
+		socket.on('login', function(data) {});
 
-		});
+		socket.on('disconnect', function() {});
 
-		socket.on('disconnect', function() {
-
-		});
-
-		socket.on('msg', function(data){
-
-		});
+		socket.on('msg', function(data){});
 	});
 }
