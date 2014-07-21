@@ -9,7 +9,7 @@ module.exports = function(app, io) {
 		res.render('chat');
 	});
 
-	var chat = io.of('/socket').on('connection', function(socket) {
+	io.of('/socket').on('connection', function(socket) {
 		socket.on('load',function(data){});
 
 		socket.on('login', function(data) {});
